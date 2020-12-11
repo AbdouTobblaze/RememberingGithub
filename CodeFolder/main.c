@@ -11,7 +11,7 @@ int main(void)
     for(;;)
     {
         PINB = 1 << PB5 | 1 << PB2;
-        _delay_ms(500);
+        _delay_ms(1000);
     }
 }
 

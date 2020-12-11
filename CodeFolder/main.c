@@ -7,10 +7,10 @@
 
 int main(void)
 {
-    DDRB |= 1 << PB5;
+    DDRB |= 1 << PB5 | 1 << PB2;
     for(;;)
     {
-        PINB = 1 << PB5;
+        PINB = 1 << PB5 | 1 << PB2;
         _delay_ms(500);
     }
 }
